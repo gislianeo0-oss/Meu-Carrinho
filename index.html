@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insira os produtos da compra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Insira os produtos da compra</h1>
+ 
+    <form>
+        <label for="produto">Produto:</label>
+        <input type="text" id="produto" name="produto">
+ 
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" name="preco" step="0.01">
+ 
+        <label for="quantidade">Quantidade:</label>
+        <select id="quantidade" name="quantidade">
+            <option value="">Selecione</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+ 
+        <button type="button" id="btnInserir">Incluir</button>
+    </form>
+ 
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+ 
+        <tbody id="corpoTabela">
+        </tbody>
+ 
+        <tfoot>
+            <tr>
+                <td colspan="4">Total da compra:</td>
+                <td colspan="2" id="totalCompra">R$ 0,00</td>
+            </tr>
+        </tfoot>
+    </table>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
